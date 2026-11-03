@@ -96,7 +96,7 @@ header {
 /* --- HOME SECTION --- */
 
 .mega {
-  font-size: clamp(5rem, 12vw, 8rem);
+  font-size: clamp(3rem, 12vw, 8rem);
   line-height: 0.95;
   letter-spacing: -0.04em;
 }
@@ -486,3 +486,48 @@ footer {
 
 .contact-icons.reveal { transition-delay: 0.1s; }
 .contact-email.reveal { transition-delay: 0.2s; }
+
+
+/* --- MOBILE RESPONSIVENESS --- */
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .about-container {
+        flex-direction: column-reverse; 
+        text-align: center;
+        gap: 20px;
+        padding: 0 1rem; 
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text h1 {
+        font-size: 2.5rem; 
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .about-text p {
+        font-size: 1rem; 
+    }
+
+    .about-image img {
+        width: 200px; 
+        height: 200px;
+    }
+}
